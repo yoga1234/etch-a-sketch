@@ -7,10 +7,11 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: #f5f0e9;
 }
 /* button container */
 .button-container {
-  margin: 20px auto 10px auto;
+  margin: 5px auto 5px auto;
   width: max-content;
   display: flex;
 }
@@ -20,6 +21,36 @@ body {
   align-items: center;
   margin: 0 10px 0 10px;
 }
+.btn-change-grid {
+  border-radius: 10px;
+  outline: none;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #02C39A;
+  height: 45px;
+}
+.btn-change-color {
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #02C39A;
+}
+.btn-color {
+  border-radius: 10px;
+  outline: none;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #02C39A;
+  height: 40px;
+  margin: 0 10px 0 10px;
+}
+.random-color-button {
+  border-radius: 10px;
+  outline: none;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #02C39A;
+  height: 45px;
+}
 
 /* block container */
 .container {
@@ -27,11 +58,13 @@ body {
   max-width: 100%;
   max-height: 100%;
   overflow: auto;
-  border: .5px solid #000;
+  border-radius: 10px;
+  border: 2px solid #084779;
+  background-color: #87c9d7;
   padding: 5px;
   display: flex;
-  width: 600px;
-  height: 600px;
+  width: 580px;
+  height: 580px;
 }
 .div-container {
   display: flex;
@@ -39,7 +72,7 @@ body {
   flex: 1 1 0px;
 }
 .div-block {
-  border: .1px solid #000;
+  border: .1px solid #fff;
   flex: 1 1 0px;
 }
 .grey-bg {

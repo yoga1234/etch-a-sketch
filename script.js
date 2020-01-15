@@ -14,6 +14,7 @@ let headElement = document.getElementsByTagName('head')[0];
 
 // function for changing grid
 function changeGrid() {
+  
   gridSize = prompt('How many grid do you want?');
   if(gridSize > 100 || gridSize < 0) {
     alert("Grid size can choose between 0 and 100");
@@ -29,6 +30,7 @@ function changeGrid() {
       divContainer.appendChild(divBlock);
     }
   }
+
   // getting the div-block element
   const divBlocks = document.querySelectorAll('.div-block');
   divBlocks.forEach(block => block.addEventListener('mouseover', hoverMouse));
@@ -42,9 +44,7 @@ function hoverMouse(e) {
     // default is grey background
     e.target.classList.add('grey-bg');
   } else {
-    
-
-    // e.target.classList.add(`${customBackground.length}-bg`);
+    // dynamically create background style
     e.target.setAttribute("style", `background-color: ${customBackground.slice(customBackground.length - 1)}`)
   }
 
